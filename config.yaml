@@ -1,18 +1,13 @@
-assistant:
-  wakeword: "jarvis"
-  command_timeout: 15
-  confidence_threshold: 75
-
-audio:
-  microphone_index: null
-  microphone_sensitivity: 2.5
-  silence_timeout: 1.2
-
-porcupine:
-  access_key: ""
-
+# Настройки локального ИИ через Ollama
 ai:
   enabled: true
-  provider: "gemini"
-  api_key: ""
-  model: "gemini-1.5-flash"
+  host: "http://localhost:11434" # Адрес локального демона Ollama
+  
+  # Модель:
+  # "qwen2.5:7b"     - рекомендуемая (отличный русский язык, 16 ГБ RAM или 6-8 ГБ VRAM)
+  # "qwen2.5:3b"     - для слабых ПК / ноутбуков (летает даже на процессоре)
+  # "llama3.2:3b"    - быстрая легковесная модель от Meta
+  model: "qwen2.5:7b"
+  
+  temperature: 0.6               # Креативность (0.5 - 0.7 оптимально для ассистента)
+  max_history_turns: 4           # Сколько реплик диалога помнить (экономит память)

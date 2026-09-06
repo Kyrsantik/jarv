@@ -1,3 +1,9 @@
+ollama>=0.3.0
+pyyaml
+vosk
+sounddevice
+pyttsx3
+pvporcupine
 altgraph==0.17.5
 asgiref==3.10.0
 attrs==25.4.0
