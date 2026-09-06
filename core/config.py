@@ -14,7 +14,7 @@ DEFAULT_CONFIG = {
     "assistant": {
         "wakeword": "jarvis",
         "command_timeout": 15,
-        "confidence_threshold": 70,
+        "confidence_threshold": 80,
     },
     "audio": {
         "microphone_index": None,
