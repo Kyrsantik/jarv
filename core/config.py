@@ -24,7 +24,7 @@ DEFAULT_CONFIG = {
     "porcupine": {"access_key": ""},
     "ai": {
         "enabled": True,
-        "provider": "gemini",
+        "model": "qwen2.5:3b",
         "api_key": "",
         "model": "gemini-1.5-flash",
     },
@@ -40,7 +40,7 @@ def get_user_config_dir():
     return path
 
 
-CONFIG_DIR = get_user_config_dir()
+CONFIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CONFIG_PATH = os.path.join(CONFIG_DIR, "config.yaml")
 
 
