@@ -11,7 +11,7 @@ class OllamaAI:
         ai_cfg = config.get("ai", {})
         self.enabled = ai_cfg.get("enabled", True)
         self.host = ai_cfg.get("host", "http://localhost:11434")
-        self.model = ai_cfg.get("model", "qwen2.5:7b")
+        self.model = ai_cfg.get("model", "qwen2.5:3b")
         self.temperature = ai_cfg.get("temperature", 0.6)
         self.max_history_turns = ai_cfg.get("max_history_turns", 4)
 
