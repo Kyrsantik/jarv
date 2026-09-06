@@ -14,5 +14,5 @@ porcupine:
 ai:
   enabled: true
   provider: "gemini"
-  api_key: "AQ.Ab8RN6JXI1yQFlj78OidJtr8tCf56gXwQNALnL-QVrSKvkX6Bw"
+  api_key: ""
   model: "gemini-1.5-flash"
